@@ -7,6 +7,7 @@ export function createNewsCard(News){
     let p = document.createElement('p');
     let cardAction = document.createElement('div');
     let deletedBtn = document.createElement('button');
+    let price = document.createElement('p');
 
     div.setAttribute('id', News.id)
     div.classList.add('card');
@@ -23,6 +24,8 @@ export function createNewsCard(News){
 
     cardAction.classList.add('card-action')
 
+    price.textContent = News._price + ' €'
+
     deletedBtn.textContent = 'Supprimer'
     deletedBtn.classList.add('card-btn-delete')
 
@@ -31,6 +34,7 @@ export function createNewsCard(News){
     cardBody.appendChild(h2)
     cardBody.appendChild(p)
 
+    cardAction.appendChild(price)
     cardAction.appendChild(deletedBtn)
 
     div.appendChild(cardImg)

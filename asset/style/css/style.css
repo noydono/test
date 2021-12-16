@@ -287,9 +287,10 @@
 .card .card-action {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding-right: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .card .card-action .card-btn-delete {
   border-radius: 5px;
