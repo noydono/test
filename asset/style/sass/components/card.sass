@@ -7,8 +7,9 @@ main
   margin: 30px 30px
 .card
   width: 20vw
-  height: 300px
+  height: 400px
   cursor: pointer !important
+  overflow: hidden
   @include smd
     width: 40vw
   @include sm
@@ -21,6 +22,7 @@ main
       height: 100%
       width: 100%
   & .card-body
+    position: relative
     & .card-title
       margin-top: 3px
       font-size: 0.7rem
@@ -31,6 +33,37 @@ main
     & .card-price
       margin-top: 5px
       font-size: 0.7rem
+    & .delete-layout
+      position: absolute
+      visibility: hidden
+      opacity: 0
+      bottom: 0
+      right: 0
+      background-color: #f66b6b
+      border-radius: 10px
+      text-align: center
+      height: 20px
+      width: 70px
+      padding: 1px
+      transition: all 0.3s
+      & button
+        height: 100%
+        width: 100%
+        color: #333131
+        font-size: 0.8rem
+        padding: 3px
+  &:hover
+    & .delete-layout
+      visibility: visible
+      opacity: 1
+      animation: delete 0.3s
+
+
+  @keyframes delete
+    0%
+      transform: translateX(30px)
+    100%
+      transform: translateX(0)
 
 
 

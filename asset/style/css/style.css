@@ -851,8 +851,9 @@ main {
 
 .card {
   width: 20vw;
-  height: 300px;
+  height: 400px;
   cursor: pointer !important;
+  overflow: hidden;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .card {
@@ -873,6 +874,9 @@ main {
   height: 100%;
   width: 100%;
 }
+.card .card-body {
+  position: relative;
+}
 .card .card-body .card-title {
   margin-top: 3px;
   font-size: 0.7rem;
@@ -885,6 +889,40 @@ main {
 .card .card-body .card-price {
   margin-top: 5px;
   font-size: 0.7rem;
+}
+.card .card-body .delete-layout {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #f66b6b;
+  border-radius: 10px;
+  text-align: center;
+  height: 20px;
+  width: 70px;
+  padding: 1px;
+  transition: all 0.3s;
+}
+.card .card-body .delete-layout button {
+  height: 100%;
+  width: 100%;
+  color: #333131;
+  font-size: 0.8rem;
+  padding: 3px;
+}
+.card:hover .delete-layout {
+  visibility: visible;
+  opacity: 1;
+  animation: delete 0.3s;
+}
+@keyframes delete {
+  0% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .layout-header {
