@@ -1104,6 +1104,7 @@
   font-size: 1rem;
 }
 .sidenav .action-close-sidenav {
+  cursor: pointer;
   margin-top: 15px;
   font-size: 1.8rem;
   color: grey;
