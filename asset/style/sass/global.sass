@@ -15,6 +15,7 @@
   margin: 0
   padding: 0
   box-sizing: border-box
+  scroll-behavior: smooth
 
 .theme
   color: $color-main
@@ -51,14 +52,20 @@ div, h1, span
   padding: 0
   vertical-align: baseline
 
-main
-  display: flex
-  justify-content: center
-  align-items: center
-  flex-wrap: wrap
-  gap: 20px
-  margin-top: 30px
-  width: 100%
+body::-webkit-scrollbar
+  width: 12px /* width of the entire scrollbar */
+
+
+body::-webkit-scrollbar-track
+  background: #ffffff /* color of the tracking area */
+
+
+body::-webkit-scrollbar-thumb
+  background-color: rgba(91, 88, 88, 0.69)
+  /* color of the scroll thumb */
+  border-radius: 20px /* roundness of the scroll thumb */
+  border: 3px solid #ffffff /* creates padding around scroll thumb */
+
 
 
 

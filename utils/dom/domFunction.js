@@ -19,11 +19,12 @@ export function createNewsCard(News){
     h2.classList.add('card-title')
 
     p.textContent = News.description
-    p.classList.add('card-content')
+    p.classList.add('card-description')
 
     cardAction.classList.add('card-action')
 
     price.textContent = News._price + ' €'
+    price.classList.add('card-price')
 
 
     cardImg.appendChild(img)

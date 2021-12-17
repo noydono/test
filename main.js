@@ -39,13 +39,12 @@ searchDeleteButton.addEventListener('click', () => {
 burger.addEventListener('click', () => {
     sidenav.style.visibility = 'visible'
     sidenav.style.opacity = '1'
-    body.style.overflow = 'hidden'
+
     burger.style.opacity = '0'
 })
 closesidenav.addEventListener('click', () => {
     sidenav.style.opacity = '0'
     burger.style.opacity = '1'
-    body.style.overflow = 'auto'
     setTimeout(() => {
         sidenav.style.visibility = 'hidden'
     }, 850)
