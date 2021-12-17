@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
 .layout-header
   position: fixed
   top: 0
@@ -35,7 +37,7 @@
 .layout-header__mobile-action
   margin-right: $spacing-04
   cursor: pointer
-  padding-top: 6px
+  padding-top: 10px
   @include sm
     position: absolute
 .layout-header__mobile-action
@@ -45,27 +47,23 @@
 
 .layout-header__logo
   position: relative
-  @include md
-    $grid-width: 999px
-    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
-  @include smd
-    $grid-width: 600px
-    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
-  @include sm
-    $grid-width: 200px
-    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
-
+  height: 100px
+  width: 100px
+  margin-left: 30px
 .layout-logo
-  @include sm
-    display: block
+    //background-image: url("../../img/image1.png")
+    //background-size: 200px 100px
+    //background-repeat: no-repeat
+    //background-position: center
+    & a
+      font-size: 2rem
+      text-decoration: none
+      color: #1a1a1a
+      font-family: $font
+      font-weight: 900
+      text-shadow: 2px 0px 3px rgba(68, 115, 80, 0.82)
 
-.layout-logo__link
-  align-items: center
-  display: flex
-  justify-content: flex-start
-  text-decoration: none
-
-  .layout-header__logo-icon
+.layout-header__logo-icon
     padding-top: 2px
     display: block
     height: $layout-header-logo-height

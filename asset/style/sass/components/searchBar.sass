@@ -1,17 +1,6 @@
 .searchBar
   position: relative
-  margin-top: 30px
-  max-width: 100%
-  @include md
-    $grid-width: 896px
-    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
-  @include smd
-    $grid-width: 600px
-    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
-  @include sm
-    width: 70%
-    $grid-width: 400px
-    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
+  margin: 30px 90px
   & .input
     position: relative
     margin-right: $spacing-06

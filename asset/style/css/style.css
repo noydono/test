@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .mt-0 {
   margin-top: 0px !important;
 }
@@ -845,8 +846,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
-  margin-top: 30px;
-  width: 100%;
+  margin: 30px 30px;
 }
 
 .card {
@@ -937,7 +937,7 @@ main {
 .layout-header__mobile-action {
   margin-right: 16px;
   cursor: pointer;
-  padding-top: 6px;
+  padding-top: 10px;
 }
 @media (max-width: 768px) {
   .layout-header__mobile-action {
@@ -953,43 +953,28 @@ main {
 
 .layout-header__logo {
   position: relative;
-}
-@media (min-width: 1024px) {
-  .layout-header__logo {
-    margin-left: calc((100vw - 999px) / 2 - 20px);
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .layout-header__logo {
-    margin-left: calc((100vw - 600px) / 2 - 20px);
-  }
-}
-@media (max-width: 768px) {
-  .layout-header__logo {
-    margin-left: calc((100vw - 200px) / 2 - 20px);
-  }
+  height: 100px;
+  width: 100px;
+  margin-left: 30px;
 }
 
-@media (max-width: 768px) {
-  .layout-logo {
-    display: block;
-  }
-}
-
-.layout-logo__link {
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
+.layout-logo a {
+  font-size: 2rem;
   text-decoration: none;
+  color: #1a1a1a;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-shadow: 2px 0px 3px rgba(68, 115, 80, 0.82);
 }
-.layout-logo__link .layout-header__logo-icon {
+
+.layout-header__logo-icon {
   padding-top: 2px;
   display: block;
   height: 88px;
   width: auto;
 }
 @media (max-width: 768px) {
-  .layout-logo__link .layout-header__logo-icon {
+  .layout-header__logo-icon {
     padding-top: 0;
   }
 }
@@ -1044,24 +1029,7 @@ main {
 
 .searchBar {
   position: relative;
-  margin-top: 30px;
-  max-width: 100%;
-}
-@media (min-width: 1024px) {
-  .searchBar {
-    margin-left: calc((100vw - 896px) / 2 - 20px);
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .searchBar {
-    margin-left: calc((100vw - 600px) / 2 - 20px);
-  }
-}
-@media (max-width: 768px) {
-  .searchBar {
-    width: 70%;
-    margin-left: calc((100vw - 400px) / 2 - 20px);
-  }
+  margin: 30px 90px;
 }
 .searchBar .input {
   position: relative;
