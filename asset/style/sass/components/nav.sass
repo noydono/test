@@ -1,20 +1,129 @@
-nav
-  height: 10vh
-  width: 100vw
-  background-color: $greyDark
+.layout-header
+  position: fixed
+  top: 0
+  background: $color-main-000
+  padding: $spacing-03 $layout-header-horizontal-padding
+  @include sm
+  .layout__header
+    height: auto
+  .layout-header
+    position: fixed
+    top: 0
+
+.layout__header
   display: flex
-  justify-content: center
+  flex-wrap: wrap
+  justify-content: space-between
+  position: sticky
+  top: -100%
+  transition: background-color 0.3s ease-in
+  width: 100%
+  z-index: 10
+
+.layout-header__main
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
+  @include md
+    flex-wrap: nowrap
+
+.layout-header__left
+  align-items: flex-start
+  display: flex
+  @include md
+    flex-shrink: 0
+
+.layout-header__mobile-action
+  margin-right: $spacing-04
+  cursor: pointer
+  padding-top: 6px
+  @include sm
+    position: absolute
+.layout-header__mobile-action
+    height: 24px
+    transition: opacity 0.7s
+    width: $layout-header-mobile-action-width
+
+.layout-header__logo
+  position: relative
+  @include md
+    $grid-width: 996px
+    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
+  @include sm
+    $grid-width: 640px
+    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
+
+.layout-logo
+  @include sm
+    display: block
+
+.layout-logo__link
   align-items: center
-  & input
-    padding: 5px
-    border: none
-    border-radius: 5px
-    &:focus
-      border: none
-      outline:  none
-  & .nav-btn
-    border-radius: 5px
-    padding: 7px
-    border: none
-    background-color: darkgreen
-    color: black
+  display: flex
+  justify-content: flex-start
+  text-decoration: none
+
+  .layout-header__logo-icon
+    padding-top: 2px
+    display: block
+    height: $layout-header-logo-height
+    width: $layout-header-logo-width
+    @include sm
+      padding-top: 0
+
+.layout-header__right
+  flex-shrink: 0
+  margin-top: 10px
+  @include sm
+    padding-top: $spacing-02
+    height: auto
+
+.layout-header__links
+  display: flex
+  justify-content: space-between
+  height: 100%
+  text-align: right
+  gap: 30px
+  @include sm
+    padding-top: 0
+    margin-left: $spacing-04
+    align-items: flex-start
+    flex-direction: row
+
+
+.layout-header-link.link
+  color: inherit
+  font-size: $font-size-label-m
+  text-decoration: none
+  line-height: $line-height-label-m
+  letter-spacing: $letter-spacing-label-m
+  text-transform: uppercase
+  font-stretch: $font-stretch-condensed
+  font-weight: $font-weight-condensed
+  @include sm
+    margin-left: $spacing-06
+
+.layout-header-links__desktop-link
+  @include sm
+    display: inline
+
+.link
+  cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

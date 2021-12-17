@@ -7,15 +7,13 @@ export default class {
     title;
     description;
     imageUrl;
-    deleteFunction;
 
     constructor(title, description, imageUrl) {
         this._id = getRandomNumber(1,10000)
         this.title = faker.commerce.productName();
-        this.description = faker.lorem.text();
+        this.description = faker.commerce.product();
         this._price = faker.commerce.price();
         this.imageUrl = 'https://picsum.photos/200/300';
-        this.deleteFunction = this.delete();
         this._title = title;
         this._description = description;
         this._imageUrl = imageUrl;
@@ -60,9 +58,5 @@ export default class {
 
     set imageUrl(value) {
         this._imageUrl = value;
-    }
-
-    delete() {
-
     }
 }
