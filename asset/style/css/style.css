@@ -952,7 +952,7 @@
 }
 @media (max-width: 768px) {
   .layout-header__logo {
-    margin-left: calc((100vw - 340px) / 2 - 20px);
+    margin-left: calc((100vw - 200px) / 2 - 20px);
   }
 }
 
@@ -1003,7 +1003,7 @@
     padding-top: 0;
     align-items: flex-start;
     flex-direction: row;
-    margin-left: calc((100vw - 340px) / 2 - 20px);
+    margin-left: calc((100vw - 200px) / 2 - 20px);
   }
 }
 
@@ -1046,7 +1046,7 @@
 @media (max-width: 768px) {
   .searchBar {
     width: 70%;
-    margin-left: calc((100vw - 300px) / 2 - 20px);
+    margin-left: calc((100vw - 400px) / 2 - 20px);
   }
 }
 .searchBar .input {
@@ -1086,7 +1086,6 @@
   align-items: center;
   margin-top: 25px;
   margin-right: 24px;
-  flex-wrap: wrap;
 }
 .searchBar .layout-searchBar-nav .layout-searchBar-nav-left {
   display: flex;
@@ -1130,12 +1129,12 @@
 }
 @media (min-width: 1024px) {
   .sidenav {
-    width: 95%;
+    width: 97%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .sidenav {
-    width: 95%;
+    width: 97%;
   }
 }
 @media (max-width: 768px) {
