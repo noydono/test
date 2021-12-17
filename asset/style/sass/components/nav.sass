@@ -48,8 +48,11 @@
   @include md
     $grid-width: 999px
     margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
+  @include smd
+    $grid-width: 600px
+    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
   @include sm
-    $grid-width: 640px
+    $grid-width: 340px
     margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
 
 .layout-logo
@@ -85,9 +88,10 @@
   gap: 30px
   @include sm
     padding-top: 0
-    margin-left: $spacing-04
     align-items: flex-start
     flex-direction: row
+    $grid-width: 340px
+    margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
 
 
 .layout-header-link.link
@@ -99,8 +103,6 @@
   text-transform: uppercase
   font-stretch: $font-stretch-condensed
   font-weight: $font-weight-condensed
-  @include sm
-    margin-left: $spacing-06
 
 .layout-header-links__desktop-link
   @include sm
