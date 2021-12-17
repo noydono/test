@@ -9,15 +9,15 @@
   .layout-header
     position: fixed
     top: 0
-
 .layout__header
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+  position: sticky
+  top: -100%
   transition: background-color 0.3s ease-in
   width: 100%
   z-index: 10
-
 .layout-header__main
   display: flex
   flex-wrap: wrap
@@ -46,7 +46,7 @@
 .layout-header__logo
   position: relative
   @include md
-    $grid-width: 996px
+    $grid-width: 999px
     margin-left: calc(((100vw - $grid-width) / 2) - $layout-header-horizontal-padding)
   @include sm
     $grid-width: 640px
